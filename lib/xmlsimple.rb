@@ -222,7 +222,7 @@ class XmlSimple
         @options['rootname'] = keys[0]
       end
     elsif @options['rootname'] == ''
-      if ref.instance_of?(Hash)
+      if ref.kind_of?(Hash)
         refsave = ref
         ref = {}
         refsave.each { |key, value|
